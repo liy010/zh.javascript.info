@@ -1,10 +1,14 @@
 # Object copying, references
+# 对象复制，引用
 
 One of the fundamental differences of objects vs primitives is that they are stored and copied "by reference".
+对象与原始类型的一个根本区别是对象通过“引用”来存储和复制的。
 
 Primitive values: strings, numbers, booleans -- are assigned/copied "as a whole value".
+原始类型值：字符串，数值，布尔 -- 分配/复制整个值
 
 For instance:
+例如
 
 ```js
 let message = "Hello!";
@@ -12,12 +16,15 @@ let phrase = message;
 ```
 
 As a result we have two independent variables, each one is storing the string `"Hello!"`.
+现在我们有两个独立的值，每个都存储一个字符串`"Hello!"`.
 
 ![](variable-copy-value.svg)
 
 Objects are not like that.
+但对象不是这样。
 
 **A variable stores not the object itself, but its "address in memory", in other words "a reference" to it.**
+**变量不存储对象本身，**
 
 Here's the picture for the object:
 
